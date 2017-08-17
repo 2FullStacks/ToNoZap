@@ -10,7 +10,7 @@ module.exports = app => {
 
   app.get('/api/logout', (req, resp) => {
     req.logout();
-    res.send(req.user);
+    resp.send(req.user);
   });
 
   app.get('/api/current_user', (req, resp) => {
